@@ -53,13 +53,13 @@ public class MovieService {
         }
     }
 
-    public boolean deleteMovieById(String id) {
+    public String deleteMovieById(String id) {
             boolean isMoviePresent = movieRepo.existsById(id);
             if (!isMoviePresent) {
                 throw new MovieNotFoundException("Movie Not Found with id : " + id);
             }
             movieRepo.deleteById(id);
-            return true;
+            return "Movie Deleted with id : "+id;
         
     }
 
