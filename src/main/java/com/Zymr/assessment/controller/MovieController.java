@@ -36,18 +36,18 @@ public class MovieController {
 		return movieService.getMovieById(id);
 	}
 	
-	@GetMapping(path="/get/all")
+	@GetMapping
 	public List<MovieDTO> getAllMovies(){
 		return  movieService.getAllMovies();
 		
 	}
 
-	@DeleteMapping(path="/delete/{id}")
+	@DeleteMapping(path="/{id}")
 	public boolean deleteMovieById(@PathVariable String id) {
 		return movieService.deleteMovieById(id);
 	}
 	
-	@PutMapping(path="/update/{id}")
+	@PutMapping(path="/{id}")
 	public MovieDTO updateMovie(@PathVariable("id") String id ,@Valid @RequestBody MovieDTO updateMovie) {
 		System.out.println("Update mapping executed..");
 		return movieService.updateMovie(id,updateMovie);

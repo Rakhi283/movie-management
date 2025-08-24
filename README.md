@@ -78,13 +78,13 @@ mvnw.cmd spring-boot:run
 
 ### API Endpoints
 
-| Method | Endpoint                | Description                |
-|--------|-------------------------|----------------------------|
-| POST   | `/movies`               | Create a new movie         |
-| GET    | `/movies/{id}`          | Get movie by ID            |
-| GET    | `/movies/get/all`       | List all movies            |
-| PUT    | `/movies/update/{id}`   | Update movie by ID         |
-| DELETE | `/movies/delete/{id}`   | Delete movie by ID         |
+| Method | Endpoint         | Description          |
+|--------|------------------|----------------------|
+| POST   | `/movies`        | Create a new movie   |
+| GET    | `/movies/{id}`   | Get movie by ID      |
+| GET    | `/movies`        | List all movies      |
+| PUT    | `/movies/{id}`   | Update movie by ID   |
+| DELETE | `/movies/{id}`   | Delete movie by ID   |
 
 ### Swagger UI
 
@@ -109,4 +109,4 @@ Licensed under the Apache License, Version 2.0.
 
 ---
 
-For more details, see the source code in [src/main/java/com/Zymr/assessment/](src/main/java/com/Zymr/assessment/).
+For more details, see the source code in [src/main/java/com/Zymr/assessment/](src/main/java/com/Zymr/assessment/)
