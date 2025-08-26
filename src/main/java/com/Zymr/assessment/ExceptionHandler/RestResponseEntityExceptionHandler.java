@@ -9,7 +9,9 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 import com.Zymr.assessment.dto.ApiError;
 
-@RestControllerAdvice
+import jakarta.servlet.http.HttpServletRequest;
+
+@RestControllerAdvice(basePackages = "com.Zymr.assessment.controller")
 public class RestResponseEntityExceptionHandler {
 	
 	@ExceptionHandler(MovieNotFoundException.class)
